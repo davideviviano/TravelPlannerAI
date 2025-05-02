@@ -1,0 +1,191 @@
+/* Impostazioni generali */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f8f7; /* colore di sfondo grigio chiaro */
+    color: #333;
+    padding: 20px;
+}
+
+/* Contenitore centrale */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Card */
+.card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    background-color: #ffffff;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-10px); /* Effetto hover */
+}
+
+/* Header */
+h2 {
+    font-size: 32px;
+    color: #28a745; /* verde brillante */
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+/* Etichette e campi del form */
+.form-label {
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+/* Campi di input */
+.form-control, .form-select {
+    border-radius: 12px;
+    border: 1px solid #ddd;
+    padding: 12px 16px;
+    margin-bottom: 18px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: #28a745;
+    box-shadow: 0 0 0 3px rgba(40, 167, 69, 0.25); /* Effetto focus verde */
+}
+
+/* Checkbox e lista attività */
+.form-check {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.form-check-input {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    accent-color: #28a745; /* colore verde per la checkbox */
+}
+
+.form-check-label {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Pulsante di submit */
+button {
+    background-color: #28a745;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #218838; /* verde scuro al passaggio del mouse */
+}
+
+/* Sezione di risposta */
+.alert {
+    font-size: 16px;
+    padding: 15px;
+    border-radius: 12px;
+    margin-top: 30px;
+}
+
+.alert-info {
+    background-color: #d1ecf1;
+    color: #0c5460;
+    border: 1px solid #bee5eb;
+}
+
+.alert-light {
+    background-color: #fefefe;
+    color: #6c757d;
+    border: 1px solid #d6d8db;
+}
+
+/* Testo mentre si "sta pensando" */
+#pensando-text {
+    color: #6c757d;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+/* Media queries per la responsività */
+@media (max-width: 768px) {
+    .card {
+        padding: 25px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 10px;
+    }
+}
+#pensando-text {
+    display: none; /* Nascondi inizialmente */
+    background-color: #f1f1f1;
+    color: #666;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#response-ai {
+    white-space: pre-wrap;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    font-size: 1rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-top: 20px;
+    max-height: 70vh; 
+    overflow-y: auto;
+    line-height: 1.6;
+}
+
+#response-ai ul {
+    padding-left: 1.5rem;
+    list-style-type: disc;
+    margin-bottom: 1rem;
+}
+
+#response-ai li {
+    margin-bottom: 0.5rem;
+}
+
+#response-ai b {
+    font-weight: bold;
+    color: #007bff;
+}
+
+  
